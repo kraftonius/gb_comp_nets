@@ -8,3 +8,25 @@ interface Tunnel777
 !
 ip route 192.168.0.0 255.255.255.0 172.16.0.2 - не забываем про маршрут в сеть нашего "филиала". Next-hop'ом здесь выступает IP адрес удаленного туннельного интерфейса.
 !
+
+
+
+
+
+
+
+
+
+
+interface Tunnel1
+ ip address 192.168.1.1 255.255.255.0
+ tunnel source GigabitEthernet0/0/0
+ tunnel destination 104.0.0.2
+
+
+
+
+interface Tunnel1
+ ip address 192.168.2.1 255.255.255.0
+ tunnel source GigabitEthernet0/0
+ tunnel destination 101.0.0.2

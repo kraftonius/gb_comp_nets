@@ -1,0 +1,8 @@
+Certificate is saved at: /etc/letsencrypt/live/thisischatserver.ddns.net/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/thisischatserver.ddns.net/privkey.pem
+
+
+
+./sacli --key "cs.priv_key" --value_file "/etc/letsencrypt/live/thisischatserver.ddns.net/privkey.pem" ConfigPut
+
+./sacli --key "cs.cert" --value_file "/etc/letsencrypt/live/thisischatserver.ddns.net/fullchain.pem" ConfigPut

@@ -1,0 +1,1 @@
+echo -e "GET / HTTP/1.1\r\nHost: ya.ru\r\n\r\n" | nc ya.ru 443
